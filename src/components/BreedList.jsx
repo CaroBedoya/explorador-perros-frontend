@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import DogGallery from "./DogGallery";
 import Loader from "./Loader";
 import { API_URL } from "../config";
-import "../styles/Breedlist.css";
+import "../styles/BreedList.css";
 
 function BreedList() {
   const [breeds, setBreeds] = useState([]);
