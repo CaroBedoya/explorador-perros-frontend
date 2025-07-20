@@ -1,12 +1,70 @@
-# React + Vite
+# Explorador de Razas de Perros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con React + Vite, que permite explorar diferentes razas de perros a través de imágenes obtenidas desde la Dog CEO API.
+Incluye buscador, galería interactiva, diseño responsive y funcionalidades dinámicas.
 
-Currently, two official plugins are available:
+### Características principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Listado completo de razas de perros.
 
-## Expanding the ESLint configuration
+Buscador en tiempo real para filtrar razas.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Galería de imágenes con modal para ver las fotos ampliadas.
+
+Diseño responsive para móviles, tablets y escritorio.
+
+Preloader animado en la carga inicial.
+
+Botón "Volver arriba" cuando se muestra la galería.
+
+Créditos en el footer con tu nombre y referencia a TripleTen.
+
+### Tecnologías utilizadas
+
+React con Vite
+
+React Router DOM
+
+CSS puro (con diseño responsive)
+
+Dog CEO API → https://dog.ceo/dog-api
+
+### Estructura del proyecto
+
+src/
+│── assets/ # Imágenes del proyecto
+│── components/ # Componentes reutilizables (Home, BreedList, DogGallery, etc.)
+│── styles/ # Archivos CSS
+│── App.jsx # Componente principal
+│── main.jsx # Punto de entrada
+
+### API utilizada
+
+Dog CEO API → https://dog.ceo/dog-api
+
+### Instalación y ejecución
+
+# Clonar el repositorio
+
+git clone https://github.com/CaroBedoya/explorador-perros-frontend.git
+
+# Instalar dependencias
+
+npm install
+
+# Ejecutar el proyecto
+
+npm run dev
+
+# Abrir en el navegador
+
+http://localhost:5173
+
+### Diseño responsive
+
+El sitio está optimizado para móviles, tablets y pantallas grandes.
+
+### Autora
+
+Carolina Bedoya
+Proyecto educativo desarrollado en TripleTen.
