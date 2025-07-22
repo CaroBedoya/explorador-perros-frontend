@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Modal from "./Modal";
 import Loader from "./Loader";
 import { API_URL } from "../config";
-import "../styles/dogGallery.css";
+import "../styles/DogGallery.css";
 
 function DogGallery({ breed }) {
   const [images, setImages] = useState([]);
