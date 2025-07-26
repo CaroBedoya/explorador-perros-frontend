@@ -3,6 +3,7 @@ import DogGallery from "./DogGallery";
 import Loader from "./Loader";
 import { API_URL } from "../config";
 import "../styles/BreedList.css";
+import bannerImg from "../assets/banner-razas.jpg";
 
 function BreedList() {
   const [breeds, setBreeds] = useState([]);
@@ -14,7 +15,6 @@ function BreedList() {
 
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  // ✅ Obtener razas con manejo de errores
   useEffect(() => {
     fetch(`${API_URL}/breeds/list/all`)
       .then((res) => {
@@ -36,7 +36,6 @@ function BreedList() {
     setFilteredBreeds(breeds.filter((breed) => breed.includes(value)));
   };
 
-  // ✅ Mostrar botón scroll-to-top
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300 && selectedBreed) {
@@ -62,7 +61,7 @@ function BreedList() {
     <div className="breedlist-container">
       <div className="banner">
         <img
-          src="/src/assets/banner-razas.jpg"
+          src={bannerImg}
           alt="Explorador de Razas de Perros"
           className="banner-img"
         />
